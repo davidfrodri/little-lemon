@@ -30,7 +30,7 @@ export const SpecialsCard = () => {
     }
   ]
 
-  const specialMenusItems = specialMenus.map(menu => {
+  const specialMenusItems = specialMenus.map((menu, index) => {
     const image = menu.image
     const title = menu.title
     const price = menu.price
@@ -39,7 +39,7 @@ export const SpecialsCard = () => {
 
     return (
       // eslint-disable-next-line react/jsx-key
-      <div>
+      <div key={index}>
         <div className='special-card-container'>
           <div className='image-container'>
             <img src={image} alt='Special dessert' />

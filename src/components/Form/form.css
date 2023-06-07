@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-primary-one: #495E57;
+    --color-primary-two: #F4CE14;
+    --color-highlight: #EDEFEE;
+    --color-highlight2: #333333;
+
+    --font-style-one: 'Markazi Text', serif;
+}
+
+.form-container {
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: var(--color-primary-one);
+    border-radius: 10px;
+    padding: 70px 50px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.booking-form input, .booking-form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #333333;
+}
+
+.form-container h2,
+.form-container p,
+.form-container label {
+    color: #EDEFEE;
+}
+
+.form-button-container {
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.error {
+    color: rgb(238, 76, 76);
+}

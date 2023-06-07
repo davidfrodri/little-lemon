@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import { Button } from '../Common/Button/Button'
 import MainImg from '../../assets/icons_assets/gourmet.jpg'
 
@@ -11,7 +13,9 @@ export const Main = () => {
           <h1 className='main-title'>Little Lemon</h1>
           <h2 className='main-subtitle'>Chicago</h2>
           <p className='main-p'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-          <Button text='Reserve a Table' />
+          <NavLink to='/booking'>
+            <Button text='Reserve a Table' />
+          </NavLink>
         </div>
         <img src={MainImg} alt='Restaurant Food' />
       </div>

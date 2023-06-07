@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import Logo from '../../assets/icons_assets/logo.jpg'
 
 import './header.css'
@@ -6,7 +8,9 @@ export const Header = () => {
   return (
     <header className='header'>
       <nav className='nav'>
-        <img src={Logo} alt='logo' />
+        <NavLink to='/'>
+          <img src={Logo} alt='logo' />
+        </NavLink>
         <ul className='nav-list'>
           <li><a href='/'>Home</a></li>
           <li><a href='/'>About</a></li>

@@ -13,7 +13,7 @@ export const Specials = () => {
             <h1>This Week's Specials</h1>
           </div>
           <div className='specials-button'>
-            <Button text='Online Menu' />
+            <Button text='Online&nbsp;Menu' />
           </div>
         </div>
         <SpecialsCard />
